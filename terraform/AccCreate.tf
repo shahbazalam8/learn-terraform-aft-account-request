@@ -1,22 +1,22 @@
-module "sandbox02" {
+module "sandbox07" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "catkhann01234@gmail.com"
-    AccountName               = "demoaccount"
+    AccountEmail              = "salmankhann01234@gmail.com"
+    AccountName               = "DevSecOps"
     ManagedOrganizationalUnit = "Sandbox"
     SSOUserEmail              = "shahbaz.alam@synectiks.com"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    SSOUserFirstName          = "DevSecOps"
+    SSOUserLastName           = "Ops"
   }
 
   account_tags = {
-    "Account" = "subaccount-stage"
+    "Account" = "subaccount-devops"
   }
 
   change_management_parameters = {
     change_requested_by = "Admin"
-    change_reason       = "Demo Account creation"
+    change_reason       = "DevSecops Application testing"
   }
 
   custom_fields = {
