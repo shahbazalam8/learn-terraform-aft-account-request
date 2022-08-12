@@ -15,7 +15,7 @@ module "sandbox_tree" {
   }
 
   change_management_parameters = {
-    change_requested_by = "Admin"
+    change_requested_by = "Admin test user"
     change_reason       = "Staging Account for demo Application"
   }
 
