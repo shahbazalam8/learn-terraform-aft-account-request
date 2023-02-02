@@ -44,12 +44,12 @@ module "testit" {
 
   change_management_parameters = {
     change_requested_by = "Admin"
-    change_reason       = "Staging Account for demo Application"
+    change_reason       = "devtest Account for demo Application"
   }
 
   custom_fields = {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "tryit"
 }
